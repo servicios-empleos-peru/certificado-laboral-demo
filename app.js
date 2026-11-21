@@ -18,7 +18,7 @@
   function showPage(nextPage) {
     page = Math.max(1, Math.min(3, nextPage));
     $('pdf-error').hidden = true;
-    $('pdf-page').src = `assets/pdf/pagina-${page}.png`;
+    $('pdf-page').src = `assets/pdf/pagina-${page}.png?v=20261121-pdf2`;
     $('pdf-page').alt = `Página ${page} de 3 del certificado adjunto`;
     $('page-counter').textContent = `Pág.: ${page} / 3`;
     $('previous').disabled = page === 1;
